@@ -1,0 +1,49 @@
+
+<div class="main">
+    <h1>{{title}}</h1>
+
+    <form [formGroup]="faqsForm" class="form" *ngIf="!Summary">
+        <div class="row">
+            <div class="col-md-6">
+                <textarea class="textarea" placeholder="Enter Text" formControlName="text"></textarea>
+            </div>
+        </div>
+        <div class="submit">
+            <button class="btn btn-info" (click)="onSubmit()" [disabled]="faqsForm.invalid">Submit</button>
+        </div>
+
+    </form>
+    <div class="summary" *ngIf="Summary">
+        {{Summary}}
+
+        <div class="submit">
+            <button class="btn btn-info" (click)="reset()">Reset</button>
+        </div>
+    </div>
+</div> -->
+<!----ham menu----->
+<!-- <div id="ham" class="sidenav">
+    <img alt="image" style="width:85%; height:150px" src="logo of savage.png">
+    <a href="javascript:void(0)" class="closebt" onclick="closeNav()">&times;</a>
+    <a href="HOME.html">Home</a>
+    <a href="MY STORY.html">My Story</a>
+    <a href="CAREER.html">Career</a>
+    <a href="EDUCATION.html">Education</a>
+    <a href="PORTOFOLIO.html">Portofolio</a>
+    <a href="CONTACT.html">Contact</a>
+    <img alt="logo"  src="og.png">
+ </div>
+ <span style="font-size:45px;cursor:pointer" onclick= "openNav()">&equiv;</span>  
+ <script>
+         function openNav(){
+         document.getElementById("ham").style.display="block";}
+ 
+         function closeNav(){
+         document.getElementById("ham").style.display="none";}
+ </script>
+ <!--end ham--->
+ <!-- <div class="image">
+   <div class="hero-text">
+     <h1>Capturing Moments....!!</h1>
+   </div>
+ </div> -->
